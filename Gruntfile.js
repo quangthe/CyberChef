@@ -237,17 +237,17 @@ module.exports = function (grunt) {
                 ]
             }
         },
-        zip: {
-            standalone: {
-                cwd: "build/prod/",
-                src: [
-                    "build/prod/**/*",
-                    "!build/prod/index.html",
-                    "!build/prod/BundleAnalyzerReport.html",
-                ],
-                dest: `build/prod/CyberChef_v${pkg.version}.zip`
-            }
-        },
+        // zip: {
+        //     standalone: {
+        //         cwd: "build/prod/",
+        //         src: [
+        //             "build/prod/**/*",
+        //             "!build/prod/index.html",
+        //             "!build/prod/BundleAnalyzerReport.html",
+        //         ],
+        //         dest: `build/prod/CyberChef_v${pkg.version}.zip`
+        //     }
+        // },
         connect: {
             prod: {
                 options: {
