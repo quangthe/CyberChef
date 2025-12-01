@@ -29,7 +29,8 @@ module.exports = function (grunt) {
         "Creates a production-ready build. Use the --msg flag to add a compile message.",
         [
             "eslint", "clean:prod", "clean:config", "exec:generateConfig", "findModules", "webpack:web",
-            "copy:standalone", "zip:standalone", "clean:standalone", "exec:calcDownloadHash", "chmod"
+            // "copy:standalone", "zip:standalone", "clean:standalone", 
+            "exec:calcDownloadHash", "chmod"
         ]);
 
     grunt.registerTask("node",
